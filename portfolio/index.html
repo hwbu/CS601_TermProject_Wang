@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="main.js" type="module"></script>
+</head>
+
+<body class="main">
+    <!-- side bar -->
+    <div class="sidenav">
+        <a href="index.html">About Me</a>
+        <a href="hobby.html">My Hobby</a>
+        <a href="seattle.html">Seattle Intro</a>
+        <a href="rainier.html">Mt Rainier Hiking</a>
+        <a href="hometown.html">My Hometown</a>
+        <a href="food.html">Chinese Cuisine</a>
+        <a href="education.html">My Education</a>
+        <a href="work.html">My Work Exp.</a>
+    </div>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <div id="app" class="rowA" style="margin-top:-90px">
+        <div class="columnA" style="margin-top:50px">
+            <!--mouseover and mouseleave-->
+            <div>
+                <img src="photos/HuiWang.jpg" alt="selfie" class="photo" onmouseover="updatePhoto(1)" onmouseleave="updatePhoto(0)">
+                <p style="background-color:rgb(246, 242, 238); padding:0px">
+                    My name is Hui Wang, a big boy from China to pursue advanced academics. In 2018 I came to
+                    University of New Hampshire for an MBA, and after graduation I entered my current company as an operations
+                    manager. My company is a manufacturer of restaurant equipment. I am now in the 8th class of MSSD degree, in preparation of
+                    a new career.
+                </p>
+            </div>
+        </div>
+        <div class="columnA" style="margin-left:20px; margin-top:50px">
+            <div>
+                <img alt="Toto" class="photo" src="photos/Toto.jpg" onmouseover="updatePhoto(3)" onmouseleave="updatePhoto(2)">
+                <p style="background-color:rgb(246, 242, 238); padding:0px">
+                    I have a cute 2 year-old Corgi, Toto. He is my best friend and resource of most joy in my life. He is about 35 lbs
+                    already, and a pet doctor suggested to reduce his food volumn. I have tried but sometimes he is so cute and I just could not help to
+                    treat him! Everyday I need to walk him for 2 times at least. It is the happiest time in a day for Toto, and for me as well. 
+                </p>
+            </div> 
+        </div>
+    </div>
+</body>
+
+</html>
